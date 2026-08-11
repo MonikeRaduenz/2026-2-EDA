@@ -1,20 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void calcula_circulo(float raio, float *pPerimetro, float *pArea);
+#define N 4
+
+// multiplicar todos menos o indice
 
 int main(){
-    float raio, *pPerimetro, *pArea, perimetro, area;
-    printf("Insira o valor do raio:\n");
-    scanf("%f", &raio);
-    pArea = &area;
-    pPerimetro = &perimetro;
-    calcula_circulo(raio, pPerimetro, pArea);
-    printf("Valor do perimetro: %f \n", *pPerimetro);
-    printf("Valor da area: %f", *pArea);
-}
-
-void calcula_circulo(float raio, float *pPerimetro, float *pArea){
-    *pPerimetro = raio * 3.14;
-    *pArea = (raio * raio) * 3.14;
+    int v[N], v2[N];
+    printf("Insira os valores para o vetor:\n");
+    for(int i = 0; i < N; i++){
+        scanf("%d", &v[i]);
+    }
+    for (int i = 0; i < N; i++) { 
+        int produto = 1; 
+        for (int j = 0; j < N; j++) { 
+            if (j != i) { 
+                produto *= v[j]; 
+                } 
+            } 
+        v2[i] = produto; 
+        } 
+    printf("[");
+    for (int i = 0; i < N; i++) { 
+        printf("%d ", v2[i]); 
+    }
+    printf("]");
 }

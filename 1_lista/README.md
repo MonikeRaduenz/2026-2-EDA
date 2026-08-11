@@ -1,17 +1,30 @@
-1) Escreva uma função que troca os valores entre duas variáveis do tipo float. Faça um 
-programa que leia duas variáveis e mostre seus valores na tela. Em seguida, troque os 
-valores (usando a função) e mostre novamente os valores.<br>
-void troca_valor(float *x, float *y);
-2) Faça uma função que calcula o perímetro e a área de um círculo, dado o raio.<br>
-void calcula_circulo(float raio, float *pPerimetro, float *pArea);
-3) Faça uma função que receba um parâmetro (por valor) com o total de minutos passados 
-ao longo do dia e receba também dois parâmetros (referência) no qual deve preencher 
-com o valor da hora e do minuto corrente. Faça um programa que leia do teclado quantos 
-minutos se passaram desde meia-noite e imprima a hora corrente (use a sua função).<br>
-void cacula_hora(int totalMinutos, int *ph, int *pm);
-4) Escreva uma função que recebe um vetor e sua capacidade como parâmetros e precisa 
-“retornar” o maior e o menor valores do vetor.<br>
-void max_min(int vet[], int tam, int *pMin, int *pMax);
-5) Escreva um programa que determine o maior valor de um vetor bem como sua posição no 
-vetor (índice). Tal processamento deve ser feito em uma função que recebe o vetor (do 
-tipo float) e sua capacidade, e “retorna” o maior elemento e sua posição.
+1) Dado um vetor de números inteiros v de tamanho n e um número k, retorne verdadeiro 
+se a soma de qualquer par de números em v for igual a k.<br>
+Exemplo: dado v = [10,15,3,7] e k = 17, a saída deve ser true, pois 10 + 7 é 17
+2) Dado um vetor de números inteiros v, retorne um novo vetor de forma que cada 
+elemento no índice i seja o produto de todos os números na matriz original, com 
+exceção de i.<br>
+Exemplo 1: dado v = [1,2,3,4,5], a saída esperada é [120,60,40,30,24]<br>
+Exemplo 2: dado v = [3,2,1], a saída esperada é [2,3,6]
+3) Números primos são os números naturais que têm apenas dois divisores distintos: 1 e 
+ele mesmo. Faça um programa que solicite um número natural, em seguida, informe o 
+número é primo ou não.<br>
+Exemplo 1, dado o termo 23, a saída esperada é sim.<br>
+Exemplo 2, dado o termo 77, a saída esperada é não.
+4) Dado uma matriz quadrada m de números inteiros e de tamanho n, calcule a soma das 
+diagonais principal e secundária.<br>
+Exemplo, dado 
+m = [<br>
+ [1, 2, 3, 4],<br>
+ [4, 3, 2, 1],<br>
+ [7, 8, 9, 6],<br>
+ [6, 5, 4, 3]<br>
+], a saída esperada é 16 e 20
+5) Run-length encoding (RLE) é uma forma simples de compressão de textos. A ideia 
+desta técnica é representar caracteres repetidos sucessivamente com um contador 
+seguido pelo caractere. Dada uma string, retorne o texto resultante da aplicação da 
+técnica RLE.<br>
+Exemplo, dada a string "AAAABBBCCDAA", a saída compactada deve ser "4A3B2C1D2A"
+
+
+
