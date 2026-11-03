@@ -26,9 +26,9 @@ int main() {
     int resultado = pesquisaSequencial(chaveBusca, vetor, tamanho, &iteracoes);
 
     if (resultado != -1) {
-        printf("Elemento %d encontrado no índice %d.\n", chaveBusca, resultado);
+        printf("Elemento %d encontrado no indice %d.\n", chaveBusca, resultado);
     } else {
-        printf("Elemento %d não encontrado no vetor.\n", chaveBusca);
+        printf("Elemento %d nao encontrado no vetor.\n", chaveBusca);
     }
     
     printf("Número de iterações necessárias: %d\n", iteracoes);
