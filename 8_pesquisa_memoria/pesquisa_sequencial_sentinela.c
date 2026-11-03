@@ -28,8 +28,6 @@ int pesquisaSequencialSentinela(int chave, int v[], int n) {
     
     // Se i < n, o elemento foi encontrado dentro do vetor original
     if (i < n) {
-        // Opcional: retornar o contador de operações em vez do índice, 
-        // seguindo o padrão do seu código anterior que retorna métricas de custo.
         return contador; 
     }
     
